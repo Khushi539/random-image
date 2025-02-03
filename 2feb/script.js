@@ -11,6 +11,10 @@ btn.addEventListener("click", function () {
     let randomIndex = Math.floor(Math.random() * images.length);
     image.src = images[randomIndex];
     
+    let rotate = Math.floor(Math.random() * 360);
+
+    image.style.rotate = rotate + "deg";
+
     imageContainer.appendChild(image);
     console.log(image);
 })
